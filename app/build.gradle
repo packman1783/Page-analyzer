@@ -4,13 +4,14 @@ plugins {
     id("com.github.ben-manes.versions") version "0.51.0"
     id("com.adarshr.test-logger") version '4.0.0'
     id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("io.freefair.lombok") version "8.6"
 }
 
 group = 'hexlet.code'
 version = '1.0-SNAPSHOT'
 
 application {
-    mainClass.set("org.example.hexlet.HelloWorld")
+    mainClass.set("hexlet.code.App")
 }
 
 compileJava { options.release = 20 }
