@@ -20,4 +20,4 @@ COPY /app .
 
 RUN gradle installDist
 
-CMD java -jar build/libs/app-1.0-SNAPSHOT-all.jar
+CMD java -jar build/libs/app-1.0-SNAPSHOT.jar
