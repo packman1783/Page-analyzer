@@ -19,7 +19,15 @@ public class App {
         return Integer.parseInt(port);
     }
 
+    private static String getDatabaseUrl() {
+        return System.getenv().getOrDefault("JDBC_DATABASE_URL", "jdbc:h2:mem:project;DB_CLOSE_DELAY=-1;");
+    }
+
     public static Javalin getApp() {
+        HikariConfig hikariConfig = new HikariConfig();
+        hikariConfig.setJdbcUrl(getDatabaseUrl());
+        HikariDataSource dataSource = new HikariDataSource(hikariConfig);
+
         Javalin app = Javalin.create(config -> {
             config.bundledPlugins.enableDevLogging();
         });
