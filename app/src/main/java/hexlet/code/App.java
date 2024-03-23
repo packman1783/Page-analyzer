@@ -4,6 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 
 import io.javalin.Javalin;
 
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
 @Slf4j
 public class App {
     public static void main(String[] args) {
