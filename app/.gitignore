@@ -7,6 +7,9 @@ build/
 # Ignore logs
 **/logs/
 
+# Ignored JTE fro jte-classes directory
+jte-classes
+
 # Ignore IntelliJ IDEA
 .idea/
 *.iws
