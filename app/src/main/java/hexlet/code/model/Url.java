@@ -20,7 +20,8 @@ public class Url {
         this.createdAt = createdAt;
     }
 
-    public Url(String name) {
+    public Url(String name, Timestamp createdAt) {
         this.name = name;
+        this.createdAt = createdAt;
     }
 }
