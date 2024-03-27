@@ -40,6 +40,8 @@ dependencies {
 //ready JDBC connection pool for database
     implementation("com.zaxxer:HikariCP:5.1.0")
     implementation("com.h2database:h2:2.2.224")
+//driver for postgresql
+    implementation("org.postgresql:postgresql:42.7.3")
 }
 
 test {
