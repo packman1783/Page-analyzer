@@ -33,7 +33,7 @@ public class UrlRepository extends BaseRepository {
             stmt.setLong(1, id);
             var resultSet = stmt.executeQuery();
             if (resultSet.next()) {
-                var name = resultSet.getString("url");
+                var name = resultSet.getString("name");
                 var createdAt = resultSet.getTimestamp("created_at");
                 var url = new Url(name, createdAt);
                 url.setId(id);
