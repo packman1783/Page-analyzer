@@ -1,12 +1,14 @@
 package hexlet.code;
+
 import hexlet.code.controller.RootController;
 import hexlet.code.controller.UrlController;
 import hexlet.code.repository.BaseRepository;
-
 import hexlet.code.util.NamedRoutes;
+
 import lombok.extern.slf4j.Slf4j;
 
 import io.javalin.Javalin;
+import io.javalin.rendering.template.JavalinJte;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
@@ -14,14 +16,14 @@ import com.zaxxer.hikari.HikariDataSource;
 import gg.jte.ContentType;
 import gg.jte.TemplateEngine;
 import gg.jte.resolve.ResourceCodeResolver;
-import io.javalin.rendering.template.JavalinJte;
 
 import java.nio.charset.StandardCharsets;
 
 import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 import java.io.IOException;
 import java.sql.SQLException;
-import java.io.InputStreamReader;
 
 import java.util.stream.Collectors;
 
