@@ -4,6 +4,7 @@ import hexlet.code.dto.urls.UrlPage;
 import hexlet.code.dto.urls.UrlsPage;
 import hexlet.code.model.Url;
 import hexlet.code.repository.UrlRepository;
+import hexlet.code.util.NamedRoutes;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -16,7 +17,6 @@ import java.sql.Timestamp;
 import java.util.Date;
 import java.util.Collections;
 
-import hexlet.code.util.NamedRoutes;
 import io.javalin.http.Context;
 import io.javalin.http.NotFoundResponse;
 
