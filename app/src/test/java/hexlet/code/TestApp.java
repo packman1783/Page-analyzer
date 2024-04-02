@@ -9,7 +9,6 @@ import io.javalin.testtools.JavalinTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.sql.SQLException;
 import java.sql.Timestamp;
 
 import java.util.Date;
@@ -64,7 +63,7 @@ public class TestApp {
     }
 
     @Test
-    public void testExistUrl() throws SQLException {
+    public void testExistUrl() {
         JavalinTest.test(app, (server, client) -> {
             Url url = new Url("http://example.com", new Timestamp(new Date().getTime()));
             UrlRepository.save(url);
