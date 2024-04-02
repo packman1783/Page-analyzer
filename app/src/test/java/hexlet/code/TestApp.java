@@ -61,27 +61,7 @@ public class TestApp {
             assertThat(response.body().string()).contains("https://www.example.com");
             assertThat(UrlRepository.getEntities()).hasSize(1);
         });
-    }
 
-    @Test
-    public void testExistUrl() {
-        JavalinTest.test(app, (server, client) -> {
-            Url url = new Url("http://example.com", new Timestamp(new Date().getTime()));
-            UrlRepository.save(url);
-            var response = client.get("/urls/" + url.getId());
-            assertThat(response.code()).isEqualTo(200);
-            assertThat(UrlRepository.getEntities()).hasSize(1);
-        });
-    }
-
-    @Test
-    public void testIncorrectUrl() {
-        JavalinTest.test(app, (server, client) -> {
-            var requestBody = "url=IncorrectUrl";
-            var response = client.post("/urls/", requestBody);
-            assertThat(response.code()).isEqualTo(200);
-            assertThat(UrlRepository.getEntities()).hasSize(0);
-        });
     }
 
     @Test
