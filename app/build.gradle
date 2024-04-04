@@ -42,6 +42,11 @@ dependencies {
     implementation("com.h2database:h2:2.2.224")
 //driver for postgresql
     implementation("org.postgresql:postgresql:42.7.3")
+//Unirest library
+    implementation 'com.konghq:unirest-java-bom:4.3.0'
+    implementation 'com.konghq:unirest-java:4.0.0-RC2'
+    testImplementation 'com.konghq:unirest-object-mappers-gson:4.2.9'
+    implementation 'com.konghq:unirest-objectmapper-jackson:4.2.9'
 }
 
 test {
