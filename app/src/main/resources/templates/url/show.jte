@@ -33,41 +33,30 @@ content = @`
     </form>
 
     <table class="table table-bordered table-hover mt-3">
+
         <thead>
-        <th class="col-1">ID</th>
-        <th class="col-1">Response code</th>
-        <th>title</th>
-        <th>h1</th>
-        <th>description</th>
-        <th class="col-2">Date of inspection</th>
+            <tr>
+                <th class="col-1">ID</th>
+                <th class="col-1">Response code</th>
+                <th>Title</th>
+                <th>H1</th>
+                <th>Description</th>
+                <th class="col-2">Date of inspection</th>
+            </tr>
         </thead>
 
 
         <tbody>
-
-        @for(var check : page.getUrlChecks())
-        <tr>
-            <td>
-                ${check.getId()}
-            </td>
-            <td>
-                ${check.getStatusCode()}
-            </td>
-            <td>
-                ${check.getTitle()}
-            </td>
-            <td>
-                ${check.getH1()}
-            </td>
-            <td>
-                ${check.getDescription()}
-            </td>
-            <td>
-                ${check.getCreatedAt().toString()}
-            </td>
-        </tr>
-        @endfor
-
+            @for(var check : page.getUrlChecks())
+            <tr>
+                <td>${check.getId()}</td>
+                <td>${check.getStatusCode()}</td>
+                <td>${check.getTitle()}</td>
+                <td>${check.getH1()}</td>
+                <td>${check.getDescription()}</td>
+                <td>${check.getCreatedAt().toString()}</td>
+            </tr>
+            @endfor
         </tbody>
 
     </table>
