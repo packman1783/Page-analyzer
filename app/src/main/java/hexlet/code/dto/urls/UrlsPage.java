@@ -13,5 +13,5 @@ import lombok.Getter;
 @Getter
 public class UrlsPage extends BasePage {
     private List<Url> urls;
-    private Map<Long, UrlCheck> checks;
+    private Map<Long, UrlCheck> mapChecks;
 }

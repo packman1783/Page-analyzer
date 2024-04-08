@@ -14,5 +14,5 @@ import java.util.List;
 @Getter
 public class UrlPage extends BasePage {
     private Url url;
-    private List<UrlCheck> urlChecks;
+    private List<UrlCheck> listChecks;
 }

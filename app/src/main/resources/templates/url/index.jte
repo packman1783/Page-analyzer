@@ -32,13 +32,13 @@ content = @`
                     </a>
                 </td>
                 <td>
-                    @if(page.getChecks().get(url.getId()) != null)
-                        ${page.getChecks().get(url.getId()).getCreatedAt().toString()}
+                    @if(page.getMapChecks().get(url.getId()) != null)
+                        ${page.getMapChecks().get(url.getId()).getCreatedAt().toString()}
                     @endif
                 </td>
                 <td>
-                    @if(page.getChecks().get(url.getId()) != null)
-                        ${page.getChecks().get(url.getId()).getStatusCode()}
+                    @if(page.getMapChecks().get(url.getId()) != null)
+                        ${page.getMapChecks().get(url.getId()).getStatusCode()}
                     @endif
                 </td>
             </tr>

@@ -28,7 +28,7 @@ content = @`
     </table>
 
     <h2 class="mt-5">Checks</h2>
-    <form method="post" action=${NamedRoutes.urlChecksPath(page.getUrl().getId())}>
+    <form method="post" action="${NamedRoutes.urlChecksPath(page.getUrl().getId())}">
         <button type="submit" class="btn btn-primary">Run check</button>
     </form>
 
@@ -47,7 +47,7 @@ content = @`
 
 
         <tbody>
-            @for(var check : page.getUrlChecks())
+            @for(var check : page.getListChecks())
             <tr>
                 <td>${check.getId()}</td>
                 <td>${check.getStatusCode()}</td>
