@@ -9,6 +9,8 @@ import io.javalin.testtools.JavalinTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.IOException;
+import java.sql.SQLException;
 import java.sql.Timestamp;
 
 import java.util.Date;
@@ -20,7 +22,7 @@ public class TestApp {
     Javalin app;
 
     @BeforeEach
-    public void setUp() throws Exception {
+    public void setUp() throws IOException, SQLException {
         app = App.getApp();
     }
 
