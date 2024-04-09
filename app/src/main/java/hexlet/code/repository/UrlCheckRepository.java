@@ -14,7 +14,7 @@ import java.util.Optional;
 public class UrlCheckRepository extends BaseRepository {
     public static void save(UrlCheck urlCheck) throws SQLException {
         String sql = "INSERT INTO url_checks (url_id, status_code, title, h1, description, created_at)"
-                + " VALUES (?, ?, ?, ?, ?)";
+                + " VALUES (?, ?, ?, ?, ?, ?)";
         try (var conn = dataSource.getConnection();
              var stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
             stmt.setLong(1, urlCheck.getId());
@@ -52,7 +52,6 @@ public class UrlCheckRepository extends BaseRepository {
                 urlCheck.setId(id);
                 result.add(urlCheck);
             }
-
             return result;
         }
     }
@@ -71,7 +70,7 @@ public class UrlCheckRepository extends BaseRepository {
                 var h1 = checks.getString("h1");
                 var description = checks.getString("description");
                 var createdAt = checks.getTimestamp("created_at");
-                var urlCheck = new UrlCheck(statusCode, h1, title, description, urlId, createdAt);
+                var urlCheck = new UrlCheck(statusCode, title, h1, description, urlId, createdAt);
                 urlCheck.setId(id);
                 return Optional.of(urlCheck);
             } else {
