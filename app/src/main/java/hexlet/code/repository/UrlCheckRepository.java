@@ -17,7 +17,7 @@ public class UrlCheckRepository extends BaseRepository {
                 + " VALUES (?, ?, ?, ?, ?, ?)";
         try (var conn = dataSource.getConnection();
              var stmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)) {
-            stmt.setLong(1, urlCheck.getId());
+            stmt.setLong(1, urlCheck.getUrlId());
             stmt.setInt(2, urlCheck.getStatusCode());
             stmt.setString(3, urlCheck.getTitle());
             stmt.setString(4, urlCheck.getH1());
@@ -25,6 +25,7 @@ public class UrlCheckRepository extends BaseRepository {
             stmt.setTimestamp(6, urlCheck.getCreatedAt());
             stmt.executeUpdate();
             var generatedKeys = stmt.getGeneratedKeys();
+
             if (generatedKeys.next()) {
                 urlCheck.setId(generatedKeys.getLong(1));
             } else {
