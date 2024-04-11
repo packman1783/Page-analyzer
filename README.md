@@ -33,6 +33,6 @@ By default, the server starts at http://localhost:7070.
 
 ![img_1.png](img_1.png)
 
- - On website's page click on the button "Run check" to start the first check of your site. And get results of the checking in a table under the button.
+ - On website's page click on the button "Run check" to start the first check of your site. And get results in a table under the button.
 
 ![img_12.png](img_12.png)
