@@ -18,7 +18,7 @@ import java.sql.Timestamp;
 
 import java.util.Date;
 
-public class UrlCheckController {
+public final class UrlCheckController {
     public static void create(Context ctx) throws SQLException {
         var inputId = ctx.pathParamAsClass("id", Long.class).get();
         var inputUrl = UrlRepository.find(inputId)

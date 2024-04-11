@@ -3,6 +3,7 @@ package hexlet.code.controller;
 import hexlet.code.dto.BasePage;
 
 import java.util.Collections;
+
 import io.javalin.http.Context;
 
 public final class RootController {

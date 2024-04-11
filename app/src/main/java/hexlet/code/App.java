@@ -22,14 +22,14 @@ import java.nio.charset.StandardCharsets;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 import java.io.IOException;
+
 import java.sql.SQLException;
 
 import java.util.stream.Collectors;
 
 @Slf4j
-public class App {
+public final class App {
     public static void main(String[] args) throws IOException, SQLException {
         Javalin app = getApp();
         app.start(getPort());
@@ -77,6 +77,7 @@ public class App {
         app.post(NamedRoutes.urlsPath(), UrlController::create);
         app.get(NamedRoutes.urlPath("{id}"), UrlController::show);
         app.post(NamedRoutes.urlChecksPath("{id}"), UrlCheckController::create);
+
         return app;
     }
 
@@ -85,6 +86,7 @@ public class App {
         ClassLoader classLoader = App.class.getClassLoader();
         ResourceCodeResolver codeResolver = new ResourceCodeResolver("templates", classLoader);
         TemplateEngine templateEngine = TemplateEngine.create(codeResolver, ContentType.Html);
+
         return templateEngine;
     }
 }

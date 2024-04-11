@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Optional;
 
-public class UrlCheckRepository extends BaseRepository {
+public final class UrlCheckRepository extends BaseRepository {
     public static void save(UrlCheck urlCheck) throws SQLException {
         String sql = "INSERT INTO url_checks (url_id, status_code, title, h1, description, created_at)"
                 + " VALUES (?, ?, ?, ?, ?, ?)";
@@ -53,6 +53,7 @@ public class UrlCheckRepository extends BaseRepository {
                 urlCheck.setId(id);
                 result.add(urlCheck);
             }
+
             return result;
         }
     }
@@ -73,6 +74,7 @@ public class UrlCheckRepository extends BaseRepository {
                 var createdAt = checks.getTimestamp("created_at");
                 var urlCheck = new UrlCheck(statusCode, title, h1, description, urlId, createdAt);
                 urlCheck.setId(id);
+
                 return Optional.of(urlCheck);
             } else {
                 return Optional.empty();

@@ -8,8 +8,8 @@ import hexlet.code.repository.UrlRepository;
 import hexlet.code.util.NamedRoutes;
 
 import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URI;
 import java.net.URL;
 
 import java.sql.SQLException;
@@ -45,16 +45,15 @@ public final class UrlController {
 
     public static void create(Context ctx) throws SQLException {
         var inputUrl = ctx.formParamAsClass("url", String.class)
-                .check(value -> !value.isEmpty(), "Url cannot be empty")
                 .get()
                 .toLowerCase()
                 .trim();
 
-        URL parsedUrl;
         String normalUrl;
 
         try {
-            parsedUrl = new URI(inputUrl).toURL();
+            URL parsedUrl = new URI(inputUrl).toURL();
+// The Authority part of the URL is the host name and the port of the URI
             normalUrl = parsedUrl.getProtocol() + "://" + parsedUrl.getAuthority();
         } catch (MalformedURLException | URISyntaxException | IllegalArgumentException e) {
             ctx.sessionAttribute("flash", "Incorrect URL");

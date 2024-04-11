@@ -3,8 +3,8 @@ package hexlet.code;
 import hexlet.code.model.Url;
 import hexlet.code.repository.UrlCheckRepository;
 import hexlet.code.repository.UrlRepository;
-
 import hexlet.code.util.NamedRoutes;
+
 import io.javalin.Javalin;
 import io.javalin.testtools.JavalinTest;
 
@@ -19,7 +19,9 @@ import okhttp3.mockwebserver.MockWebServer;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
 import java.nio.charset.StandardCharsets;
+
 import java.sql.SQLException;
 import java.sql.Timestamp;
 
@@ -28,7 +30,7 @@ import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class TestApp {
+public final class TestApp {
     private static Javalin app;
     private static MockWebServer mockWebServer;
     private static String testUrl;

@@ -48,7 +48,7 @@ dependencies {
     testImplementation 'com.konghq:unirest-object-mappers-gson:4.2.9'
     implementation 'com.konghq:unirest-objectmapper-jackson:4.2.9'
 //jsoup is a library for analysing, extracting and managing data, in HTML documents
-    implementation 'org.jsoup:jsoup:1.16.1'
+    implementation 'org.jsoup:jsoup:1.17.2'
 //mockWebServer library for simulating remote server, with HTTP requests, for tests
     testImplementation("com.squareup.okhttp3:mockwebserver:4.12.0")
 }
