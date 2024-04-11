@@ -8,7 +8,7 @@ Page Analyzer is a site based on the Javalin framework that analyses specified p
 page title, HTML H1 block (if present), HTML meta description block (if present). Here we practice the basic principles of building
 modern sites on MVC-architecture: working with routing, request handlers and templating, interaction with the database via ORM.
 
-You can familiarise yourself with the possibilities of the site here [page-analyzer](https://java-project-72-jf6n.onrender.com)
+You can familiarise yourself with the possibilities of the site here on Render.com [page-analyzer](https://java-project-72-jf6n.onrender.com)
 
 ## Use:
 for example: 
