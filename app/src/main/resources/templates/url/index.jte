@@ -8,19 +8,21 @@ page =page,
 content = @`
 
 <div class="container-lg mt-5">
+
     <h1>Sites</h1>
 
     <table class="table table-bordered table-hover mt-3">
         <thead>
-        <tr>
-            <th class="col-1">ID</th>
-            <th>Name</th>
-            <th>Last check</th>
-            <th>Response code</th>
-        </tr>
+            <tr>
+                <th class="col-1">ID</th>
+                <th>Name</th>
+                <th>Last check</th>
+                <th>Response code</th>
+            </tr>
         </thead>
 
         <tbody>
+
         @for(var url : page.getUrls())
             <tr>
                 <td>
@@ -43,6 +45,7 @@ content = @`
                 </td>
             </tr>
         @endfor
+
         </tbody>
 
     </table>

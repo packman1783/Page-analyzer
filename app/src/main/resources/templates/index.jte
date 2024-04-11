@@ -16,7 +16,7 @@ content = @`
                 </h1>
 
                 <p class="lead">
-                    Check websites for SEO suitability for free
+                    Check websites for SEO suitability
                 </p>
 
                 <form action="${NamedRoutes.urlsPath()}" method="post" class="rss-form text-body">
@@ -26,7 +26,9 @@ content = @`
                             <div class="form-floating">
                                 <input id="url-input"
                                        autofocus type="text"
+
                                        required name="url"
+
                                        aria-label="url"
                                        class="form-control w-100"
                                        placeholder="link"
