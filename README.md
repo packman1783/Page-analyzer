@@ -4,9 +4,16 @@
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a3f323ecd3b6c41d92c0/test_coverage)](https://codeclimate.com/github/packman1783/java-project-72/test_coverage)
 
 ## Description:
-Page Analyzer is a site based on the Javalin framework that analyses specified pages for SEO suitability. The request returns details like, response status code,
-page title, HTML H1 block (if present), HTML meta description block (if present). Here we practice the basic principles of building
-modern sites on MVC-architecture: working with routing, request handlers and templating, interaction with the database via ORM.
+Page Analyzer is a site based on the Javalin framework that analyses specified pages for SEO suitability. The request returns details:
+ - response status code
+ - page title
+ - HTML H1 block (if present)
+ - HTML meta description block (if present)
+
+Here we practice the basic principles of building modern sites on MVC-architecture: 
+ - working with routing 
+ - request handlers and templating 
+ - interaction with the database via ORM
 
 You can familiarise yourself with the possibilities of the site here on Render.com [page-analyzer](https://java-project-72-jf6n.onrender.com)
 
