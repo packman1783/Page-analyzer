@@ -19,7 +19,7 @@
                 crossorigin="anonymous"></script>
     </head>
 
-    <body class="d-flex flex-column min-vh-100" style="background-image: url('https://i.ibb.co/mNT0XZC/1668611951-12-pibig-info-p-zastavka-na-rabochii-stol-minimalizm-oboi-13.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+    <body class="d-flex flex-column min-vh-100">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <div class="container-fluid">
