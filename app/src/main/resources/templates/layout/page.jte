@@ -55,7 +55,7 @@
 
         </main>
 
-        <footer class="footer border-top py-3 mt-5 bg-dark">
+        <footer class="footer border-top py-3 mt-5 bg-light">
             <div class="container-xl">
                 <div class="text-center">
                     created by
