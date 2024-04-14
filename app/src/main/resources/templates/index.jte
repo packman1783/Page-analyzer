@@ -33,7 +33,7 @@ content = @`
                                        class="form-control w-100"
                                        placeholder="link"
                                        autocomplete="off">
-                                <label for="url-input">Link</label>
+                                <label for="url-input">Site</label>
                             </div>
                         </div>
 

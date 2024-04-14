@@ -19,9 +19,9 @@
                 crossorigin="anonymous"></script>
     </head>
 
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" style="background-image: url('https://i.ibb.co/mNT0XZC/1668611951-12-pibig-info-p-zastavka-na-rabochii-stol-minimalizm-oboi-13.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <div class="container-fluid">
 
                 <a class="navbar-brand" href="/">Page Analyzer</a>
@@ -55,7 +55,7 @@
 
         </main>
 
-        <footer class="footer border-top py-3 mt-5 bg-light">
+        <footer class="footer border-top py-3 mt-5 bg-info">
             <div class="container-xl">
                 <div class="text-center">
                     created by
