@@ -35,7 +35,7 @@ content = @`
                 </td>
                 <td>
                     @if(page.getMapChecks().get(url.getId()) != null)
-                        ${page.getMapChecks().get(url.getId()).getCreatedAt().toString()}
+                        ${page.getMapChecks().get(url.getId()).getCreatedAt().toString().substring(0, 19)}
                     @endif
                 </td>
                 <td>
