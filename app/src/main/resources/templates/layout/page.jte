@@ -19,7 +19,12 @@
                 crossorigin="anonymous"></script>
     </head>
 
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100"
+    style="background-image: url('https://i.ibb.co/k86BLXN/ut.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;">
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-info">
             <div class="container-fluid">
