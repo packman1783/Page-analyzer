@@ -81,7 +81,6 @@ public final class App {
         return app;
     }
 
-//Configure DirectoryCodeResolver to load templates from a given route
     private static TemplateEngine createTemplateEngine() {
         ClassLoader classLoader = App.class.getClassLoader();
         ResourceCodeResolver codeResolver = new ResourceCodeResolver("templates", classLoader);

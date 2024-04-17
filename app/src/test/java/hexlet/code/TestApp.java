@@ -35,7 +35,6 @@ public final class TestApp {
     private static MockWebServer mockWebServer;
     private static String testUrl;
 
-//the same method from App
     private static String readResourceFile(String fileName) throws IOException {
         var inputStream = App.class.getClassLoader().getResourceAsStream(fileName);
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))) {
