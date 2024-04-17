@@ -26,10 +26,17 @@ gradle run
 By default, the server starts at http://localhost:7070.
 
  - On the empty field of the home page print name of the website you want to check and click "Check".
-   <img src="https://i.ibb.co/J2V8sgc/first-image.png" alt="first image" border="0">
+
+   <img src="https://i.ibb.co/tJ3pThL/image.png" alt="first image" border="0">
 
  - The website will be added to the list of other pages. Click on name of your website.
-   <img src="https://i.ibb.co/jg7MG3m/second-image.png" alt="second image" border="0">
 
- - On website's page click on the button "Run check" to start the first check of your site. And get results in a table under the button.
-   <img src="https://i.ibb.co/gFsT2K0/third-images.png" alt="third images" border="0">
+   <img src="https://i.ibb.co/gDvFzm1/image.png" alt="second image" border="0">
+
+ - On website's page click on the button "Run check" to start the first check of your site.
+
+   <img src="https://i.ibb.co/w6YnxsK/image.png" alt="third images" border="0">
+
+ - Get results in a table under the button.
+
+   <img src="https://i.ibb.co/Js0P7kr/image.png" alt="fourth images" border="0">
