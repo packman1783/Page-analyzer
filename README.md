@@ -31,7 +31,7 @@ By default, the server starts at http://localhost:7070.
 
  - The website will be added to the list of other pages. Click on name of your website.
 
-   ![second image](https://i.ibb.co/NrjzkPV/image-2.png)
+   ![second image](https://i.ibb.co/VYTndZN/image-2.png)
 
  - On website's page click on the button "Run check" to start the first check of your site.
 
