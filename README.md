@@ -27,16 +27,16 @@ By default, the server starts at http://localhost:7070.
 
  - On the empty field of the home page print name of the website you want to check and click "Check".
    
-    <img src="https://i.ibb.co/tJ3pThL/image.png" alt="first image">
+   ![first image](https://i.ibb.co/tJ3pThL/image.png)
 
  - The website will be added to the list of other pages. Click on name of your website.
-   
-   <img src="https://i.ibb.co/gDvFzm1/image.png" alt="second image">
+
+   ![second image](https://i.ibb.co/gDvFzm1/image.png)
 
  - On website's page click on the button "Run check" to start the first check of your site.
 
-   <img src="https://i.ibb.co/w6YnxsK/image.png" alt="third images">
+   ![third image](https://i.ibb.co/w6YnxsK/image.png)
 
  - Get results in a table under the button.
 
-   <img src="https://i.ibb.co/Js0P7kr/image.png" alt="fourth images">
+   ![fourth image](https://i.ibb.co/Js0P7kr/image.png)
