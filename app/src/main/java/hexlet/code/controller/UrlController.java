@@ -53,7 +53,6 @@ public final class UrlController {
 
         try {
             URL parsedUrl = new URI(inputUrl).toURL();
-// The Authority part of the URL is the host name and the port of the URI
             normalUrl = parsedUrl.getProtocol() + "://" + parsedUrl.getAuthority();
         } catch (MalformedURLException | URISyntaxException | IllegalArgumentException e) {
             ctx.sessionAttribute("flash", "Incorrect URL");
